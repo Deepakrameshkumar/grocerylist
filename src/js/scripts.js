@@ -9,7 +9,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     firebase.auth().signInWithEmailAndPassword(username, password)
         .then((userCredential) => {
             // Redirect to the dashboard page
-            window.location.href = 'dashboard.html';
+            window.location.href = 'src/dashboard.html';
         })
         .catch((error) => {
             errorMessage.textContent = 'Invalid username or password';
