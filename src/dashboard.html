@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Grocery List</title>
+    <link rel="stylesheet" href="css/liststyles.css">
     <!-- Firebase App (the core Firebase SDK) -->
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
     <!-- Firebase Authentication -->
@@ -17,7 +17,7 @@
             apiKey: "AIzaSyC98SqxsN1F4MSER5vtU_4yxUgRlfl73e0",
             authDomain: "firstproject-69843.firebaseapp.com",
             projectId: "firstproject-69843",
-            storageBucket: "firstproject-69843.firebaseapp.com",
+            storageBucket: "firstproject-69843.appspot.com",
             messagingSenderId: "483940533361",
             appId: "1:483940533361:web:7424a2cbee830b1c7107d0"
         };
@@ -34,11 +34,24 @@
     </script>
 </head>
 <body>
-    <div class="dashboard-container">
-        <h2>Welcome to the Dashboard</h2>
-        <p id="welcome-message">You have successfully logged in.</p>
-        <div id="user-data"></div> <!-- Container to display user data -->
+    <div class="container">
+        <header>
+            <div class="logo"><img src="\assets\images\logo.png" style="max-width: 15%; height: auto;"></div>
+            <div class="menu-icon">☰</div>
+        </header>
+        <div class="content">
+            <div class="title">
+                <div>
+                <h1>DS household</h1>  
+                <h2><i>Grocery list</i></h2> </div>  
+                <div class="add-icon">+</div>
+            </div>
+            <!-- Empty lists to be populated dynamically -->
+            <ul class="open-items"></ul>
+            <hr class="divider">
+            <ul class="closed-items"></ul>
+        </div>
     </div>
-    <script src="js/dashboard.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

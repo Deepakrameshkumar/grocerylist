@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 375px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.content {
+    padding: 20px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title h1 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.title h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+}
+
+.add-icon {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.grocery-list {
+    list-style: none;
+}
+
+.grocery-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.grocery-list li input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.grocery-list li label {
+    flex: 1;
+    font-size: 16px;
+}
+
+.grocery-list li .timestamp {
+    font-size: 14px;
+    color: #999;
+}
+
+.grocery-list li.completed label,
+.grocery-list li.completed .timestamp {
+    color: #ccc;
+}
+
+.grocery-list li.completed input[type="checkbox"] {
+    accent-color: #ccc;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+/* Styles for the open-items list */
+.open-items {
+    background-color: #e8f5e9; /* Light green background */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Styles for the closed-items list */
+.closed-items {
+    background-color: #fbe9e7; /* Light red background */
+    padding: 10px;
+    border-radius: 5px;
+}
